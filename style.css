@@ -1,0 +1,36 @@
+*{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight is auto set to 500 just make it 700 when you need to */
+}
+nav, header{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#left-nav,#right-nav{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+ 
+#left-header h1{
+    font-size: 55px;
+}
+
+#search-bar{
+    background-image: url(./images/bg-shorten-desktop.svg);
+}
