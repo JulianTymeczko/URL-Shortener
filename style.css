@@ -4,10 +4,26 @@
 
     /* font-weight is auto set to 700 just make it 500 when you need to */
 }
-/* this will be for the side padding and heights of all of the parent containers */
+
+
 h1{
     font-size: 30px;
 }
+
+
+
+/* everything with white writing font colour */
+footer h1, footer h2, #get-started h1{
+    color: white;
+}
+
+
+
+
+
+
+
+/* this will be for the side padding and heights of all of the parent containers */
 nav{
     padding-top: 35px;
     padding-left: 200px;
@@ -29,6 +45,8 @@ footer{
 #advanced-statistics{
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 nav {
@@ -105,11 +123,21 @@ header {
     background-image: url(./images/bg-shorten-desktop.svg);
     background-repeat: no-repeat;
     text-align: center;
-    padding:35px;
+    padding:45px 55px;
     background-size: 100%;
-
+    display: flex;
     background-color: hsl(257, 27%, 26%);
-
+    gap:30px
+}
+#search-bar input{
+    flex: 1;
+    border-radius: 15px;
+    border: none;
+    text-indent: 30px;
+}
+#search-bar input:focus{
+   outline: none;
+  
 }
 
 
@@ -191,6 +219,7 @@ header {
 }
 #get-started h1{
     margin-bottom: 50px;
+    font-size: 40px
 }
 
 
