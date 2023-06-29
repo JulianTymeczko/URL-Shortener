@@ -1,36 +1,219 @@
-*{
+* {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    /* font-weight is auto set to 500 just make it 700 when you need to */
+
+    /* font-weight is auto set to 700 just make it 500 when you need to */
 }
-nav, header{
-    background-color: white;
-}
-a{
-    text-decoration: none;
-    
-}
+/* this will be for the side padding and heights of all of the parent containers */
 
 nav{
+    padding-top: 35px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+header{
+    padding-left: 200px;
+    margin-bottom: 70px;
+}
+#search-bar{
+    margin: 0 200px;
+}
+footer{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#advanced-statistics{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
-}
-#left-nav,#right-nav{
-    display: flex;
-    flex-direction: row;
-    gap:25px;
-}
-header{
-    display: flex;
-    flex-direction: row;
-}
- 
-#left-header h1{
-    font-size: 55px;
+    margin-bottom: 70px;
 }
 
-#search-bar{
+
+
+nav,
+header {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+#left-nav,
+#right-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-header h1 {
+    font-size: 55px;
+    line-height: 65px;
+
+}
+
+#left-header h2 {
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+}
+
+
+
+/* this is for all the green boxes with white writing */
+.green-box {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 15px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+}
+
+#search-bar {
     background-image: url(./images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+
+    background-color: hsl(257, 27%, 26%);
+
+}
+
+
+
+
+#advanced-statistics {
+    background-color: hsl(0, 5%, 95%);
+    text-align: center;
+
+}
+
+#advanced-statistics h2 {
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+
+}
+
+#statistics-bottom {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 2px;
+    background-color: green;
+}
+
+.card1::before {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.card2::before {
+    top: 25%;
+    left: 100%;
+}
+
+.card3::before {
+    top: 75%;
+    right: 100%;
+}
+
+.card1 {
+    transform: translatey(0px);
+}
+
+.card2 {
+    transform: translateY(40px);
+}
+
+.card3 {
+    transform: translateY(80px);
+}
+
+#get-started {
+    background-image: url(./images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100%;
+    padding: 60px 0px;
+    background-color: hsl(257, 27%, 26%);
+}
+#get-started h1{
+    margin-bottom: 50px;
+}
+
+
+.footer {
+    display: flex;
+ 
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(260, 8%, 14%)
+    
+}
+
+.footer h1,
+.footer h2 {
+    margin: 0;
+}
+footer h1{
+    flex-grow: .3;
+}
+.footer .icons {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .icons img {
+    margin-right: 5px;
+    width: 24px;
+}
+
+.footer .icons img:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+
+.footer .link-list {
+    margin-top: 5px;
+}
+
+
+ul{
+    line-height: 35px;
 }
