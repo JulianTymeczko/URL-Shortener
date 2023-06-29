@@ -32,9 +32,12 @@ nav{
 header{
     padding-left: 200px;
     margin-bottom: 70px;
+    
 }
 #search-bar{
     margin: 0 200px;
+    position: relative;
+    top:73.5px;
 }
 footer{
     padding-left: 200px;
@@ -45,8 +48,8 @@ footer{
 #advanced-statistics{
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 170px;
+    padding-bottom: 170px;
 }
 
 nav {
@@ -127,7 +130,8 @@ header {
     background-size: 100%;
     display: flex;
     background-color: hsl(257, 27%, 26%);
-    gap:30px
+    gap:30px;
+    border-radius: 15px;
 }
 #search-bar input{
     flex: 1;
@@ -147,6 +151,10 @@ header {
     background-color: hsl(0, 5%, 95%);
     text-align: center;
 
+}
+
+#advanced-statistics h1{
+    margin-bottom: 30px;
 }
 
 #advanced-statistics h2 {
