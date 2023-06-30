@@ -172,38 +172,33 @@ header {
 }
 
 .card {
-    width: 250px;
+    height:max-content;
+    width: 450px;
     background-color: white;
-    padding: 20px;
+    padding-left: 40px;
+    padding-top: 100px;
     margin-bottom: 30px;
-
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: start;
+    border-radius: 10px;
+    position: relative;
 }
 
-.card::before {
-    content: '';
+.card img{
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 55px;
     position: absolute;
-    width: calc(100% + 20px);
-    height: 2px;
-    background-color: green;
+    top:-35px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
-.card1::before {
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
+.card h1{
+    font-size: 25px;
 }
 
-.card2::before {
-    top: 25%;
-    left: 100%;
-}
 
-.card3::before {
-    top: 75%;
-    right: 100%;
-}
 
 .card1 {
     transform: translatey(0px);
@@ -216,6 +211,15 @@ header {
 .card3 {
     transform: translateY(80px);
 }
+
+
+
+
+
+
+
+
+
 
 #get-started {
     background-image: url(./images/bg-boost-desktop.svg);
