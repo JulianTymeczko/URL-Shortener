@@ -6,14 +6,16 @@
 }
 
 
-h1{
+h1 {
     font-size: 30px;
 }
 
 
 
 /* everything with white writing font colour */
-footer h1, footer h2, #get-started h1{
+footer h1,
+footer h2,
+#get-started h1 {
     color: white;
 }
 
@@ -24,28 +26,32 @@ footer h1, footer h2, #get-started h1{
 
 
 /* this will be for the side padding and heights of all of the parent containers */
-nav{
+nav {
     padding-top: 35px;
     padding-left: 200px;
     padding-right: 200px;
 }
-header{
+
+header {
     padding-left: 200px;
     margin-bottom: 70px;
-    
+
 }
-#search-bar{
+
+#search-bar {
     margin: 0 200px;
     position: relative;
-    top:73.5px;
+    top: 73.5px;
 }
-footer{
+
+footer {
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-#advanced-statistics{
+
+#advanced-statistics {
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 170px;
@@ -57,20 +63,23 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 70px;
-  
+
 }
-#left-nav h1{
+
+#left-nav h1 {
     align-self: center;
 }
 
-#left-nav a{
+#left-nav a {
     align-self: center;
 }
 
-#login{
+#login {
     align-self: center;
 }
-
+#left-nav a:hover, #login:hover{
+    color: black;
+}
 
 nav,
 header {
@@ -90,6 +99,13 @@ a {
     flex-direction: row;
     gap: 25px;
 }
+
+
+
+
+
+
+
 
 header {
     display: flex;
@@ -122,26 +138,33 @@ header {
     border-radius: 40px;
 }
 
+.green-box:hover {
+    background-color: hsl(180, 67%, 74%);
+}
+
+
 #search-bar {
     background-image: url(./images/bg-shorten-desktop.svg);
     background-repeat: no-repeat;
     text-align: center;
-    padding:45px 55px;
+    padding: 45px 55px;
     background-size: 100%;
     display: flex;
     background-color: hsl(257, 27%, 26%);
-    gap:30px;
+    gap: 30px;
     border-radius: 15px;
 }
-#search-bar input{
+
+#search-bar input {
     flex: 1;
     border-radius: 15px;
     border: none;
     text-indent: 30px;
 }
-#search-bar input:focus{
-   outline: none;
-  
+
+#search-bar input:focus {
+    outline: none;
+
 }
 
 
@@ -153,7 +176,7 @@ header {
 
 }
 
-#advanced-statistics h1{
+#advanced-statistics h1 {
     margin-bottom: 30px;
 }
 
@@ -168,15 +191,16 @@ header {
 #statistics-bottom {
     display: flex;
     /* justify-content: space-between; */
+    /* leave this off  */
     position: relative;
 }
 
-.green-line{
-    background-color:hsl(180, 66%, 49%);
+.green-line {
+    background-color: hsl(180, 66%, 49%);
     flex: 1;
     height: 15px;
-   align-self:center;
-    
+    align-self: center;
+
 }
 
 
@@ -185,7 +209,7 @@ header {
 
 
 .card {
-    height:max-content;
+    height: max-content;
     width: 450px;
     background-color: white;
     padding-left: 40px;
@@ -197,17 +221,17 @@ header {
     position: relative;
 }
 
-.card img{
+.card img {
     background-color: hsl(257, 27%, 26%);
     padding: 20px;
     border-radius: 55px;
     position: absolute;
-    top:-35px;
+    top: -35px;
     max-width: 80px;
     max-height: 80px;
 }
 
-.card h1{
+.card h1 {
     font-size: 25px;
 }
 
@@ -242,7 +266,8 @@ header {
     padding: 60px 0px;
     background-color: hsl(257, 27%, 26%);
 }
-#get-started h1{
+
+#get-started h1 {
     margin-bottom: 50px;
     font-size: 40px
 }
@@ -250,33 +275,47 @@ header {
 
 .footer {
     display: flex;
- 
+
     justify-content: space-between;
-    
-    background-color: hsl(260, 8%, 14%)
-    
+
+    background-color: hsl(260, 8%, 14%);
+}
+
+
+footer a:hover {
+    color: hsl(180, 66%, 49%);
+
+}
+
+
+.my-icons:hover .svg{
+ 
+
+
 }
 
 .footer h1,
 .footer h2 {
     margin: 0;
 }
-footer h1{
+
+footer h1 {
     flex-grow: .3;
 }
+
 .footer .icons {
     display: flex;
     align-items: flex-start;
-    
+
 
 }
 
-.footer .icons img {
+.footer .icons a {
     margin-right: 5px;
     width: 24px;
 }
 
-.footer .icons img:not(:last-child) {
+.footer .icons a:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -285,10 +324,11 @@ footer h1{
 .footer .link-list {
     margin-top: 5px;
 }
-div.icons{
-    gap:10px;
+
+div.icons {
+    gap: 10px;
 }
 
-ul{
+ul {
     line-height: 35px;
 }
