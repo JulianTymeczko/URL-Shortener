@@ -1,9 +1,21 @@
+// for the mobile navigation
+function toggleDropdown() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
+  }
+  
+
+
+
+
+
 let shortenIt = document.getElementById("search-bar-button")
 let userInput = document.querySelector("input")
 let pastSearchesTop = document.getElementById("statistics-top")
 
 
 shortenIt.addEventListener("click", function () {
+
     let pastSearches = document.createElement("div")
     pastSearches.setAttribute("class", "past-searches")
     pastSearchesTop.insertAdjacentElement("afterend", pastSearches)
@@ -33,7 +45,8 @@ shortenIt.addEventListener("click", function () {
             copyButton.addEventListener("click", function () {
                 copyButton.textContent = "Copied!"
                 copyButton.setAttribute("style", "background-color: hsl(257, 27%, 26%);")
-
+                let shortURLText = shortURL.textContent
+                navigator.clipboard.writeText(shortURLText)
             })
         })
 

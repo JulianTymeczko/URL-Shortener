@@ -102,7 +102,41 @@ a {
     gap: 25px;
 }
 
-
+.dropdown-container {
+    position: relative;
+    display: none;
+  }
+  
+  #dropdownButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .hamburger-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 4px;
+  }
+  
+  #dropdownMenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+  }
+  
+  #dropdownMenu li {
+    padding: 10px;
+  }
+  
 
 
 
@@ -188,7 +222,7 @@ header {
 #advanced-statistics h2 {
     line-height: 30px;
     margin-bottom: 50px;
-    color: hsl(0, 0%, 75%);
+    color: hsl(0, 5%, 70%);
     font-weight: 500;
 
 }
@@ -380,4 +414,59 @@ this is the part for the divs that will be created dynamically with javascript *
 }
 #copy-button:hover{
     background-color: hsl(180, 67%, 74%);
+}
+
+@media  screen and (max-width:700px) {
+    footer{
+        flex-direction: column;
+        gap:30px;
+       align-items: center;
+       text-align: center;
+      
+    }
+    .link-list{
+        width: max-content;
+        line-height: 40px;
+    }
+    footer div h2{
+        margin-bottom: 20px !important;
+    }
+    #get-started h1{
+        font-size: 30px;
+        
+    }
+    #statistics-bottom{
+        flex-direction: column;
+       
+    }
+    #statistics-bottom div{
+        text-align: center;
+        padding-left: 0px;
+        
+    }
+   
+    .green-line{
+        width: 20px !important;
+        height: auto !important;
+        flex-grow: 1 !important;
+        flex-shrink: 0 !important;
+
+    }
+    header{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    #right-nav a{
+        display: none;
+    }
+    #left-nav a{
+        display: none;
+    }
+    .dropdown-container{
+        display: inline-block;
+    }
+    #dropdownMenu{
+        background-color: hsl(257, 27%, 26%);
+        color: white;
+    }
 }
