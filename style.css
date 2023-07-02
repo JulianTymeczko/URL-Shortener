@@ -422,6 +422,7 @@ this is the part for the divs that will be created dynamically with javascript *
         gap:30px;
        align-items: center;
        text-align: center;
+       padding: 0px;
       
     }
     .link-list{
@@ -434,6 +435,12 @@ this is the part for the divs that will be created dynamically with javascript *
     #get-started h1{
         font-size: 30px;
         
+    }
+    #advanced-statistics{
+        padding: 0px;
+    }
+    .past-searches{
+        flex-direction: column;
     }
     #statistics-bottom{
         flex-direction: column;
@@ -452,9 +459,23 @@ this is the part for the divs that will be created dynamically with javascript *
         flex-shrink: 0 !important;
 
     }
+    .card{
+        width: 100%;
+    }
+    #search-bar{
+        margin-right:0px;
+        margin-left: 0px;
+        flex-direction: column;
+    }
     header{
         flex-direction: column;
         padding-left: 0px;
+    }
+    header div{
+        order: 2;
+    }
+    header img{
+        order: 1;
     }
     #right-nav a{
         display: none;
@@ -468,5 +489,8 @@ this is the part for the divs that will be created dynamically with javascript *
     #dropdownMenu{
         background-color: hsl(257, 27%, 26%);
         color: white;
+    }
+    nav{
+        padding: 0px;
     }
 }
