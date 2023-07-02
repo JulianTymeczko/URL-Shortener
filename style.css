@@ -77,7 +77,9 @@ nav {
 #login {
     align-self: center;
 }
-#left-nav a:hover, #login:hover{
+
+#left-nav a:hover,
+#login:hover {
     color: black;
 }
 
@@ -170,11 +172,14 @@ header {
 
 
 
+
 #advanced-statistics {
-    background-color: hsl(0, 5%, 95%);
+    background-color: hsl(0, 0%, 90%);
     text-align: center;
 
 }
+
+  
 
 #advanced-statistics h1 {
     margin-bottom: 30px;
@@ -288,10 +293,9 @@ footer a:hover {
 }
 
 
-.my-icons:hover .svg{
- 
-
-
+.my-icons:hover .svg {
+    /* change this if you ever find out how */
+    filter: brightness(50%)
 }
 
 .footer h1,
@@ -331,4 +335,49 @@ div.icons {
 
 ul {
     line-height: 35px;
+}
+/* 
+this is the part for the divs that will be created dynamically with javascript */
+
+
+.past-searches{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     width: 100%;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    gap:25px;
+
+
+}
+
+
+#full-URL{
+    font-size: 18px;
+    flex: 1;
+    text-align: start;
+    margin-bottom: 0px !important;
+    font-weight: 500;
+}
+
+#short-URL{
+    font-size: 18px;
+    margin-bottom: 0px !important;
+    color: hsl(180, 66%, 49%) !important;
+}
+
+
+#copy-button{
+    border: none;
+    color: white;
+    background-color: hsl(180, 66%, 49%) ;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#copy-button:hover{
+    background-color: hsl(180, 67%, 74%);
 }
