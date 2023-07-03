@@ -105,24 +105,24 @@ a {
 .dropdown-container {
     position: relative;
     display: none;
-  }
-  
-  #dropdownButton {
+}
+
+#dropdownButton {
     background: none;
     border: none;
     cursor: pointer;
     padding: 5px;
-  }
-  
-  .hamburger-icon {
+}
+
+.hamburger-icon {
     display: block;
     width: 20px;
     height: 2px;
     background-color: black;
     margin-bottom: 4px;
-  }
-  
-  #dropdownMenu {
+}
+
+#dropdownMenu {
     display: none;
     list-style: none;
     padding: 0;
@@ -131,12 +131,12 @@ a {
     top: 100%;
     left: 0;
     background-color: #f2f2f2;
-  }
-  
-  #dropdownMenu li {
+}
+
+#dropdownMenu li {
     padding: 10px;
-  }
-  
+}
+
 
 
 
@@ -213,7 +213,7 @@ header {
 
 }
 
-  
+
 
 #advanced-statistics h1 {
     margin-bottom: 30px;
@@ -370,26 +370,27 @@ div.icons {
 ul {
     line-height: 35px;
 }
+
 /* 
 this is the part for the divs that will be created dynamically with javascript */
 
 
-.past-searches{
+.past-searches {
     display: flex;
     flex-direction: row;
     align-items: center;
-     width: 100%;
+    width: 100%;
     padding: 30px;
     background-color: white;
     margin-bottom: 70px;
     border-radius: 10px;
-    gap:25px;
+    gap: 25px;
 
 
 }
 
 
-#full-URL{
+#full-URL {
     font-size: 18px;
     flex: 1;
     text-align: start;
@@ -397,100 +398,132 @@ this is the part for the divs that will be created dynamically with javascript *
     font-weight: 500;
 }
 
-#short-URL{
+#short-URL {
     font-size: 18px;
     margin-bottom: 0px !important;
     color: hsl(180, 66%, 49%) !important;
 }
 
 
-#copy-button{
+#copy-button {
     border: none;
     color: white;
-    background-color: hsl(180, 66%, 49%) ;
+    background-color: hsl(180, 66%, 49%);
     padding: 10px 30px;
     border-radius: 5px;
     cursor: pointer;
 }
-#copy-button:hover{
+
+#copy-button:hover {
     background-color: hsl(180, 67%, 74%);
 }
 
-@media  screen and (max-width:700px) {
-    footer{
+@media screen and (max-width:700px) {
+    footer {
         flex-direction: column;
-        gap:30px;
-       align-items: center;
-       text-align: center;
-       padding: 0px;
-      
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+
     }
-    .link-list{
+
+    .link-list {
         width: max-content;
         line-height: 40px;
     }
-    footer div h2{
+
+    footer div h2 {
         margin-bottom: 20px !important;
     }
-    #get-started h1{
+
+    #get-started h1 {
         font-size: 30px;
-        
+
     }
-    #advanced-statistics{
+
+    #advanced-statistics {
         padding: 0px;
     }
-    .past-searches{
+
+    .past-searches {
         flex-direction: column;
+        padding: 0px;
+        margin-top: 120px;
     }
-    #statistics-bottom{
+
+    .past-searches h1{
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        width:100%;
+    }
+    .past-searches h1:hover {
+        overflow-x: scroll;
+        white-space: initial;
+      }
+      
+
+    #statistics-bottom {
         flex-direction: column;
-       
+
     }
-    #statistics-bottom div{
+
+    #statistics-bottom div {
         text-align: center;
         padding-left: 0px;
-        
+
     }
-   
-    .green-line{
+
+    .green-line {
         width: 20px !important;
         height: auto !important;
         flex-grow: 1 !important;
         flex-shrink: 0 !important;
 
     }
-    .card{
+
+    .card {
         width: 100%;
     }
-    #search-bar{
-        margin-right:0px;
+
+    #search-bar {
+        margin-right: 0px;
         margin-left: 0px;
         flex-direction: column;
     }
-    header{
+
+    header {
         flex-direction: column;
         padding-left: 0px;
     }
-    header div{
+
+    header div {
         order: 2;
     }
-    header img{
+
+    header img {
         order: 1;
     }
-    #right-nav a{
+
+    #right-nav a {
         display: none;
     }
-    #left-nav a{
+
+    #left-nav a {
         display: none;
     }
-    .dropdown-container{
+
+    .dropdown-container {
         display: inline-block;
     }
-    #dropdownMenu{
+
+    #dropdownMenu {
         background-color: hsl(257, 27%, 26%);
         color: white;
     }
-    nav{
+
+    nav {
         padding: 0px;
     }
 }
