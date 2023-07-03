@@ -419,6 +419,19 @@ this is the part for the divs that will be created dynamically with javascript *
 }
 
 @media screen and (max-width:700px) {
+    /* this is for the all encompassing padding  */
+     #advanced-statistics, #get-started, #left-header{
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+    #search-bar{
+        margin-right: 35px !important;
+        margin-left: 35px !important;
+    }
+    br{
+        display: none;
+    }
+    
     footer {
         flex-direction: column;
         gap: 30px;
@@ -436,6 +449,9 @@ this is the part for the divs that will be created dynamically with javascript *
     footer div h2 {
         margin-bottom: 20px !important;
     }
+    #get-started{
+        background-image: url(./images/bg-boost-mobile.svg);
+    }
 
     #get-started h1 {
         font-size: 30px;
@@ -444,12 +460,15 @@ this is the part for the divs that will be created dynamically with javascript *
 
     #advanced-statistics {
         padding: 0px;
+        padding-top: 150px;
+        
+       
     }
 
     .past-searches {
         flex-direction: column;
         padding: 0px;
-        margin-top: 120px;
+        margin-top: 40px;
     }
 
     .past-searches h1{
@@ -458,12 +477,7 @@ this is the part for the divs that will be created dynamically with javascript *
         text-overflow: ellipsis !important;
         width:100%;
     }
-    .past-searches h1:hover {
-        overflow-x: scroll;
-        white-space: initial;
-      }
-      
-
+  
     #statistics-bottom {
         flex-direction: column;
 
@@ -474,28 +488,48 @@ this is the part for the divs that will be created dynamically with javascript *
         padding-left: 0px;
 
     }
-
+   
     .green-line {
-        width: 20px !important;
-        height: auto !important;
-        flex-grow: 1 !important;
-        flex-shrink: 0 !important;
+       flex: none;
+       width: 10px !important;
+       height: 80px;
+       
+    }
+    
+    .card {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .card3{
+        transform: none;    
 
     }
 
-    .card {
-        width: 100%;
+    .card2{
+        transform: none;
+    }
+    .card img{
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     #search-bar {
         margin-right: 0px;
         margin-left: 0px;
         flex-direction: column;
+        background-image: url(./images/bg-shorten-mobile.svg);
+        padding: 25px;
+        top:0px;
     }
 
     header {
         flex-direction: column;
         padding-left: 0px;
+      text-align: center;
+    }
+    #left-header h1{
+        font-size: 40px;
+        line-height: 50px;
     }
 
     header div {
@@ -521,6 +555,9 @@ this is the part for the divs that will be created dynamically with javascript *
     #dropdownMenu {
         background-color: hsl(257, 27%, 26%);
         color: white;
+       right: 300%;
+        width: max-content;
+        left: auto;
     }
 
     nav {
