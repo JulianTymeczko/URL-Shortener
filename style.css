@@ -529,14 +529,22 @@ this is the part for the divs that will be created dynamically with javascript *
         left: 50%;
         transform: translateX(-50%);
     }
-
+    
+   
+    #search-bar input, #search-bar button{
+        border-radius: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     #search-bar {
         margin-right: 0px;
         margin-left: 0px;
         flex-direction: column;
         background-image: url(./images/bg-shorten-mobile.svg);
         padding: 25px;
-        top:0px;
+        top:82px;
+        gap:20px;
+        
     }
 
     header {
@@ -555,9 +563,7 @@ this is the part for the divs that will be created dynamically with javascript *
 
     header img {
         order: 1;
-        overflow-x: hidden !important;
-        position: relative;
-        left: 100px;
+       
     }
 
     #right-nav a {
