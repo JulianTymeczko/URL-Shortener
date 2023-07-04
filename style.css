@@ -481,11 +481,15 @@ this is the part for the divs that will be created dynamically with javascript *
         
        
     }
-
+    #copy-button{
+        width: 100%;
+    }
     .past-searches {
         flex-direction: column;
-        padding: 0px;
+        padding: 15px;
         margin-top: 40px;
+        align-items:start;
+        gap:15px;
     }
 
     .past-searches h1{
@@ -493,6 +497,10 @@ this is the part for the divs that will be created dynamically with javascript *
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         width:100%;
+        border-bottom: 1px solid hsl(0, 0%, 75%);
+        padding-bottom: 15px;
+        width: calc(100% + 15px);
+        padding-right:15px;
     }
   
     #statistics-bottom {
