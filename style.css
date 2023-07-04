@@ -455,6 +455,9 @@ this is the part for the divs that will be created dynamically with javascript *
         align-items: center;
         text-align: center;
         padding: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+       
 
     }
 
@@ -466,18 +469,26 @@ this is the part for the divs that will be created dynamically with javascript *
     footer div h2 {
         margin-bottom: 20px !important;
     }
+   
     #get-started{
         background-image: url(./images/bg-boost-mobile.svg);
+        padding-top: 100px;
+        padding-bottom: 100px;
+      
     }
 
     #get-started h1 {
-        font-size: 30px;
+        font-size: 25px;
 
     }
-
+    #get-started a {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
     #advanced-statistics {
         padding: 0px;
         padding-top: 150px;
+        padding-bottom: 90px;
         
        
     }
@@ -487,7 +498,7 @@ this is the part for the divs that will be created dynamically with javascript *
     .past-searches {
         flex-direction: column;
         padding: 15px;
-        margin-top: 40px;
+        margin-top: 0px;
         align-items:start;
         gap:15px;
     }
@@ -505,6 +516,7 @@ this is the part for the divs that will be created dynamically with javascript *
   
     #statistics-bottom {
         flex-direction: column;
+        margin-top: 80px;
 
     }
 
