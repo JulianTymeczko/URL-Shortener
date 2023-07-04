@@ -189,13 +189,30 @@ header {
     background-color: hsl(257, 27%, 26%);
     gap: 30px;
     border-radius: 15px;
+    
 }
-
+#search-bar button{
+    border-radius: 10px;
+} 
 #search-bar input {
     flex: 1;
     border-radius: 15px;
     border: none;
     text-indent: 30px;
+    position: relative;
+}
+
+.error-placeholder-text::placeholder{
+    color: hsl(0, 74%, 71%) !important;
+}
+
+#error-message{
+    position: absolute;
+    bottom: 15px;
+    color: hsl(0, 87%, 67%);
+    font-style: italic;
+    font-weight: 500;
+    display: none;
 }
 
 #search-bar input:focus {
@@ -420,7 +437,7 @@ this is the part for the divs that will be created dynamically with javascript *
 
 @media screen and (max-width:700px) {
     /* this is for the all encompassing padding  */
-     #advanced-statistics, #get-started, #left-header{
+     #advanced-statistics, #get-started, #left-header, nav{
         padding-right: 35px !important;
         padding-left: 35px !important;
     }
@@ -538,6 +555,9 @@ this is the part for the divs that will be created dynamically with javascript *
 
     header img {
         order: 1;
+        overflow-x: hidden !important;
+        position: relative;
+        left: 100px;
     }
 
     #right-nav a {
@@ -561,6 +581,7 @@ this is the part for the divs that will be created dynamically with javascript *
     }
 
     nav {
-        padding: 0px;
+       padding: 0px;
+        margin-top: 35px;
     }
 }

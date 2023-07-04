@@ -8,13 +8,23 @@ function toggleDropdown() {
 
 
 
-
+let errorMessage = document.getElementById("error-message")
 let shortenIt = document.getElementById("search-bar-button")
 let userInput = document.querySelector("input")
 let pastSearchesTop = document.getElementById("statistics-top")
 
 
 shortenIt.addEventListener("click", function () {
+    if (userInput.value == ""){
+        userInput.setAttribute("style", "border: 2px solid hsl(0, 87%, 67%); ")
+       userInput.classList.add("error-placeholder-text")
+        errorMessage.setAttribute("style", "display: inline-block")
+        return;
+    }
+   
+    userInput.setAttribute("style", "border: none; ")
+    userInput.classList.remove("error-placeholder-text")
+    errorMessage.setAttribute("style", "display: none")
 
     let pastSearches = document.createElement("div")
     pastSearches.setAttribute("class", "past-searches")
@@ -36,19 +46,26 @@ shortenIt.addEventListener("click", function () {
     fetch(shorteningURL)
         .then(function (response) {
             return response.json()
+           
         })
         .then(function (data) {
             fullURL.textContent = userInput.value
             shortURL.textContent = data.result.short_link
-            console.log(data)
-            console.log(data.result.short_link)
+            
             copyButton.addEventListener("click", function () {
-                copyButton.textContent = "Copied!"
-                copyButton.setAttribute("style", "background-color: hsl(257, 27%, 26%);")
+              
                 let shortURLText = shortURL.textContent
                 navigator.clipboard.writeText(shortURLText)
+                 copyButton.textContent = "Copied!"
+                copyButton.setAttribute("style", "background-color: hsl(257, 27%, 26%);")
+
+                setTimeout(function () {
+                    copyButton.textContent = "Copy"
+                    copyButton.setAttribute("style", "background-color: hsl(180, 66%, 49%);")
+                }, 1000)
             })
         })
+        
 
 })
 
