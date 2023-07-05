@@ -1,8 +1,27 @@
 // for the mobile navigation, note* if you decide to change it make it clear the image and replace it with a div containing all of the items.
-function toggleDropdown() {
-   let dropdownMenu = document.getElementById("dropdownMenu");
-    dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
-  }
+let mobileNavigationButton = document.getElementById("dropdownButton")
+let replacedImage = document.getElementById("replaced-image")
+let dropdownList = document.getElementsByClassName("dropdownMenu")
+
+
+mobileNavigationButton.addEventListener("click", function (){
+    let dataNumber = replacedImage.getAttribute("data-number")
+    if (dataNumber === "2"){
+       
+        replacedImage.setAttribute("data-number", "1")
+        replacedImage.setAttribute("style", "display:inline-block;")
+        dropdownList[0].setAttribute("style", "display: none;")
+    }
+    else if (dataNumber === "1"){
+      
+        replacedImage.setAttribute("data-number", "2")
+        replacedImage.setAttribute("style", "display:none;")
+        dropdownList[0].setAttribute("style", "display: inline-block;")}
+
+   
+    
+
+})
   
 // starting to work on mobile navigation again
 
