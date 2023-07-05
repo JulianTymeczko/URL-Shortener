@@ -62,7 +62,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
 }
 
@@ -189,11 +189,13 @@ header {
     background-color: hsl(257, 27%, 26%);
     gap: 30px;
     border-radius: 15px;
-    
+
 }
-#search-bar button{
+
+#search-bar button {
     border-radius: 10px;
-} 
+}
+
 #search-bar input {
     flex: 1;
     border-radius: 15px;
@@ -202,11 +204,11 @@ header {
     position: relative;
 }
 
-.error-placeholder-text::placeholder{
+.error-placeholder-text::placeholder {
     color: hsl(0, 74%, 71%) !important;
 }
 
-#error-message{
+#error-message {
     position: absolute;
     bottom: 15px;
     color: hsl(0, 87%, 67%);
@@ -436,19 +438,25 @@ this is the part for the divs that will be created dynamically with javascript *
 }
 
 @media screen and (max-width:700px) {
+
     /* this is for the all encompassing padding  */
-     #advanced-statistics, #get-started, #left-header, nav{
+    #advanced-statistics,
+    #get-started,
+    #left-header,
+    nav {
         padding-right: 35px !important;
         padding-left: 35px !important;
     }
-    #search-bar{
+
+    #search-bar {
         margin-right: 35px !important;
         margin-left: 35px !important;
     }
-    br{
+
+    br {
         display: none;
     }
-    
+
     footer {
         flex-direction: column;
         gap: 30px;
@@ -457,7 +465,7 @@ this is the part for the divs that will be created dynamically with javascript *
         padding: 0px;
         padding-top: 50px;
         padding-bottom: 50px;
-       
+
 
     }
 
@@ -469,51 +477,63 @@ this is the part for the divs that will be created dynamically with javascript *
     footer div h2 {
         margin-bottom: 20px !important;
     }
-   
-    #get-started{
+
+    #get-started {
         background-image: url(./images/bg-boost-mobile.svg);
         padding-top: 100px;
         padding-bottom: 100px;
-      
+
     }
 
     #get-started h1 {
         font-size: 25px;
 
     }
+
     #get-started a {
         padding-right: 45px;
         padding-left: 45px;
     }
+
     #advanced-statistics {
         padding: 0px;
         padding-top: 150px;
         padding-bottom: 90px;
-        
-       
+
+
     }
-    #copy-button{
+
+    #advanced-statistics-h1 {
+        font-size: 28px;
+    }
+    #advanced-statistics-h2{
+        color: hsl(0, 4%, 60%) !important;
+        font-size: 17px;
+    }
+
+    #copy-button {
         width: 100%;
     }
+
     .past-searches {
         flex-direction: column;
         padding: 15px;
         margin-top: 0px;
-        align-items:start;
-        gap:15px;
+        align-items: start;
+        gap: 15px;
     }
 
-    .past-searches h1{
+    .past-searches h1 {
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-        width:100%;
+        width: 100%;
         border-bottom: 1px solid hsl(0, 0%, 75%);
         padding-bottom: 15px;
         width: calc(100% + 15px);
-        padding-right:15px;
+        padding-right: 15px;
     }
-  
+
     #statistics-bottom {
         flex-direction: column;
         margin-top: 80px;
@@ -525,56 +545,92 @@ this is the part for the divs that will be created dynamically with javascript *
         padding-left: 0px;
 
     }
-   
+
     .green-line {
-       flex: none;
-       width: 10px !important;
-       height: 80px;
-       
+        flex: none;
+        width: 10px !important;
+        height: 80px;
+
     }
-    
+
     .card {
         width: 100%;
         margin-bottom: 0px;
+        padding-right: 25px;
+        padding-left: 25px !important;
+        padding-top: 80px;
+
     }
-    .card3{
-        transform: none;    
+    .card h2{
+       margin-bottom: 35px !important;
+       font-size: 17px;
+    }
+    .card h1{
+       margin-bottom: 20px !important;
+    }
+
+    .card3 {
+        transform: none;
 
     }
 
-    .card2{
+    .card2 {
         transform: none;
     }
-    .card img{
+
+    .card img {
         left: 50%;
         transform: translateX(-50%);
     }
-    
-   
-    #search-bar input, #search-bar button{
+
+
+    #search-bar input,
+    #search-bar button {
         border-radius: 8px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     #search-bar {
         margin-right: 0px;
         margin-left: 0px;
         flex-direction: column;
         background-image: url(./images/bg-shorten-mobile.svg);
         padding: 25px;
-        top:82px;
-        gap:20px;
-        
+        top: 92px;
+        gap: 40px;
+
+    }
+
+    #error-message {
+        font-size: 15px;
+        bottom: 47%;
+    }
+
+    #search-bar input {
+        text-indent: 20px;
     }
 
     header {
         flex-direction: column;
         padding-left: 0px;
-      text-align: center;
+        text-align: center;
+        margin-bottom: 20px;
     }
-    #left-header h1{
+
+    header a {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    #left-header h1 {
         font-size: 40px;
         line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    header img {
+        margin-bottom: 60px;
     }
 
     header div {
@@ -583,7 +639,7 @@ this is the part for the divs that will be created dynamically with javascript *
 
     header img {
         order: 1;
-       
+
     }
 
     #right-nav a {
@@ -601,13 +657,13 @@ this is the part for the divs that will be created dynamically with javascript *
     #dropdownMenu {
         background-color: hsl(257, 27%, 26%);
         color: white;
-       right: 300%;
+        right: 300%;
         width: max-content;
         left: auto;
     }
 
     nav {
-       padding: 0px;
+        padding: 0px;
         margin-top: 35px;
     }
 }

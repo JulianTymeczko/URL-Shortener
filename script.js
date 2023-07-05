@@ -1,10 +1,10 @@
 // for the mobile navigation, note* if you decide to change it make it clear the image and replace it with a div containing all of the items.
 function toggleDropdown() {
-    var dropdownMenu = document.getElementById("dropdownMenu");
+   let dropdownMenu = document.getElementById("dropdownMenu");
     dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
   }
   
-
+// starting to work on mobile navigation again
 
 
 
