@@ -26,6 +26,12 @@ footer h2,
 
 
 /* this will be for the side padding and heights of all of the parent containers */
+#search-bar {
+    margin: 0 200px;
+    position: relative;
+    top: 73.5px;
+}
+
 nav {
     padding-top: 35px;
     padding-left: 200px;
@@ -38,11 +44,6 @@ header {
 
 }
 
-#search-bar {
-    margin: 0 200px;
-    position: relative;
-    top: 73.5px;
-}
 
 footer {
     padding-left: 200px;
@@ -429,7 +430,40 @@ this is the part for the divs that will be created dynamically with javascript *
     background-color: hsl(180, 67%, 74%);
 }
 
-@media screen and (max-width:700px) {
+@media screen and (min-width:1001px) and (max-width:1750px) {
+    nav {
+        padding-top: 35px;
+        padding-left: 5.5%;
+        padding-right: 5.5%;
+    }
+    
+    header {
+        padding-left:5.5%;
+        margin-bottom: 70px;
+    
+    }
+    
+    
+    footer {
+        padding-left: 5.5%;
+        padding-right: 5.5%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    #advanced-statistics {
+        padding-left:5.5%;
+        padding-right: 5.5%;
+        padding-top: 170px;
+        padding-bottom: 170px;
+    }
+    header img{
+        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
 
     /* this is for the all encompassing padding  */
     #advanced-statistics,
