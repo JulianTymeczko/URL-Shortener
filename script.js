@@ -2,6 +2,7 @@
 let mobileNavigationButton = document.getElementById("dropdownButton")
 let replacedImage = document.getElementById("replaced-image")
 let dropdownList = document.getElementsByClassName("dropdownMenu")
+let advancedStats = document.getElementById("advanced-statistics")
 
 
 mobileNavigationButton.addEventListener("click", function (){
@@ -60,14 +61,23 @@ shortenIt.addEventListener("click", function () {
     pastSearches.appendChild(fullURL)
     pastSearches.appendChild(shortURL)
     pastSearches.appendChild(copyButton)
-
+    let x = 0
     let shorteningURL = `https://api.shrtco.de/v2/shorten?url=${userInput.value}`
     fetch(shorteningURL)
         .then(function (response) {
+           if (response.status == 400){
+            x = 1
+           }
             return response.json()
            
         })
         .then(function (data) {
+            if (x == 1){
+                fullURL.textContent = 'Must Be Valid Link Try Again'
+                pastSearches.removeChild(copyButton)
+                return "";
+            }
+            
             fullURL.textContent = userInput.value
             shortURL.textContent = data.result.short_link
             
