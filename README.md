@@ -7,3 +7,4 @@ URL shortening server-side API.
 
 ## Link to Deployed Application
 
+https://juliantymeczko.github.io/URL-Shortener/
