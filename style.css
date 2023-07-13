@@ -430,7 +430,7 @@ this is the part for the divs that will be created dynamically with javascript *
     background-color: hsl(180, 67%, 74%);
 }
 
-@media screen and (min-width:1001px) and (max-width:1750px) {
+@media screen and (min-width:1380px) and (max-width:1750px) {
     nav {
         padding-top: 35px;
         padding-left: 5.5%;
@@ -462,8 +462,39 @@ this is the part for the divs that will be created dynamically with javascript *
     }
 }
 
+@media screen and (min-width:1151px) and (max-width:1379px){
+    nav {
+        padding-top: 35px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    
+    header {
+        padding-left:2.5%;
+        margin-bottom: 70px;
+    
+    }
+    
+    
+    footer {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    #advanced-statistics {
+        padding-left:2.5%;
+        padding-right: 2.5%;
+        padding-top: 170px;
+        padding-bottom: 170px;
+    }
+    header img{
+        overflow-x: hidden;
+    }
 
-@media screen and (max-width:1000px) {
+}
+@media screen and (max-width:1150px) {
 
     /* this is for the all encompassing padding  */
     #advanced-statistics,
