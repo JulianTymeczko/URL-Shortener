@@ -1,4 +1,4 @@
-// for the mobile navigation, note* if you decide to change it make it clear the image and replace it with a div containing all of the items.
+// for the mobile navigation
 let mobileNavigationButton = document.getElementById("dropdownButton")
 let replacedImage = document.getElementById("replaced-image")
 let dropdownList = document.getElementsByClassName("dropdownMenu")
