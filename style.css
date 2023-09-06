@@ -476,32 +476,34 @@ this is the part for the divs that will be created dynamically with javascript *
 @media screen and (min-width:1151px) and (max-width:1379px){
     nav {
         padding-top: 35px;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
     }
     
     header {
-        padding-left:2.5%;
+        padding-left:1.5%;
         margin-bottom: 70px;
+        overflow-x: hidden;
     
     }
     
-    
+  
     footer {
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
         padding-top: 60px;
         padding-bottom: 60px;
     }
     
     #advanced-statistics {
-        padding-left:2.5%;
-        padding-right: 2.5%;
+        padding-left:1.5%;
+        padding-right: 1.5%;
         padding-top: 170px;
         padding-bottom: 170px;
     }
     header img{
         overflow-x: hidden;
+        transform: translateX(100px);
     }
 
 }
